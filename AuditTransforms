@@ -1,0 +1,6 @@
+print "The following event classes have transforms associated with them:"
+for eventClass in dmd.Events.getSubOrganizers():
+    if eventClass.transform:
+        print eventClass.getOrganizerName()
+        print eventClass.transform
+        print '-'*80
